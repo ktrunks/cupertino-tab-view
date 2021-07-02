@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:gully_network_task/util/style.dart';
 
-
-class DrawerWidget extends StatelessWidget{
-
+class DrawerWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -13,16 +12,28 @@ class DrawerWidget extends StatelessWidget{
             decoration: BoxDecoration(
               color: Colors.white,
             ),
-            child: Text('Drawer Header'),
+            child: Text('Profile details',style: textStyleBack12,),
           ),
           ListTile(
-            title: Text('Item 1'),
+            title: Text('Home',style: textStyleBack12,),
             onTap: () {
               Navigator.pop(context);
             },
           ),
           ListTile(
-            title: Text('Item 2'),
+            title: Text('TO DO',style: textStyleBack12,),
+            onTap: () {
+              Navigator.pop(context);
+            },
+          ),
+          ListTile(
+            title: Text('Summary',style: textStyleBack12,),
+            onTap: () {
+              Navigator.pop(context);
+            },
+          ),
+          ListTile(
+            title: Text('Profile',style: textStyleBack12,),
             onTap: () {
               Navigator.pop(context);
             },
