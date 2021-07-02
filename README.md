@@ -17,8 +17,17 @@ samples, guidance on mobile development, and a full API reference.
 
 This application of cupertino tabview:
 1. Each tabview has it own route.
-![Optional Text](../master/application_images/home_tab.png)
 2. on back pressed each tab goes  back on it route and close the app.
 3. on click of home screen pending card it will navigate to  - to do details screen within home tab
 4. on click of   -> to do tab -> click here for to do details screen -> to do details screen within to do tab
 5. on click of   -> summary -> click here for to do summary detail screen -> to do summary detail screen within to do tab
+6. Application Screen Shot.
+![Optional Text](../master/application_images/home_tab.png)
+![Optional Text](../master/application_images/tab_tab_drawer.png)
+![Optional Text](../master/application_images/to_do_tab.png)
+![Optional Text](../master/application_images/summary_tab_screen.png)
+![Optional Text](../master/application_images/profile_tab.png)
+
+![Optional Text](../master/application_images/summary_Detail_screen.png)
+![Optional Text](../master/application_images/to_do_detail_screen.png)
+
