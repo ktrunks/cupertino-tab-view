@@ -16,119 +16,62 @@ class ListOfPercentage extends StatelessWidget {
             style: textStyleBack14,
           ),
         ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                'Wireframe',
-                style: textStyleEdit10,
-              ),
-              Row(
-                children: [
-                  Expanded(
-                    child: LinearPercentIndicator(
-                      lineHeight: 5.0,
-                      percent: 0.2,
-                      backgroundColor: Colors.grey,
-                      progressColor: Colors.blue,
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 5,
-                  ),
-                  Text('20%')
-                ],
-              ),
-            ],
-          ),
+        BarWidget(
+          title: 'Wireframe',
+          percentage: 0.2,
         ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                'Landing Screen',
-                style: textStyleEdit10,
-              ),
-              Row(
-                children: [
-                  Expanded(
-                    child: LinearPercentIndicator(
-                      lineHeight: 5.0,
-                      percent: 0.4,
-                      backgroundColor: Colors.grey,
-                      progressColor: Colors.blue,
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 5,
-                  ),
-                  Text('40%')
-                ],
-              ),
-            ],
-          ),
+        BarWidget(
+          title: 'Landing Screen',
+          percentage: 0.4,
         ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                'Prototype',
-                style: textStyleEdit10,
-              ),
-              Row(
-                children: [
-                  Expanded(
-                    child: LinearPercentIndicator(
-                      lineHeight: 5.0,
-                      percent: 0.6,
-                      backgroundColor: Colors.grey,
-                      progressColor: Colors.blue,
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 5,
-                  ),
-                  Text('60%')
-                ],
-              ),
-            ],
-          ),
+        BarWidget(
+          title: 'Prototype',
+          percentage: 0.6,
         ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                'Illustration',
-                style: textStyleEdit10,
-              ),
-              Row(
-                children: [
-                  Expanded(
-                    child: LinearPercentIndicator(
-                      lineHeight: 5.0,
-                      percent: 0.8,
-                      backgroundColor: Colors.grey,
-                      progressColor: primaryColor,
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 5,
-                  ),
-                  Text('80%')
-                ],
-              ),
-            ],
-          ),
+        BarWidget(
+          title: 'Illustration',
+          percentage: 0.8,
         ),
       ],
+    );
+  }
+}
+
+class BarWidget extends StatelessWidget {
+  final String title;
+  final double percentage;
+
+  BarWidget({required this.title, required this.percentage});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            '$title',
+            style: textStyleEdit10,
+          ),
+          Row(
+            children: [
+              Expanded(
+                child: LinearPercentIndicator(
+                  lineHeight: 5.0,
+                  percent: percentage,
+                  backgroundColor: Colors.grey,
+                  progressColor: primaryColor,
+                ),
+              ),
+              const SizedBox(
+                height: 5,
+              ),
+              Text('${percentage * 100}')
+            ],
+          ),
+        ],
+      ),
     );
   }
 }
