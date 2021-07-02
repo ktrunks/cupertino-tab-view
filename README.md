@@ -22,12 +22,14 @@ This application of cupertino tabview:
 4. on click of   -> to do tab -> click here for to do details screen -> to do details screen within to do tab
 5. on click of   -> summary -> click here for to do summary detail screen -> to do summary detail screen within to do tab
 6. Application Screen Shot.
-![Optional Text](../master/application_images/home_tab.png)
-![Optional Text](../master/application_images/tab_tab_drawer.png)
-![Optional Text](../master/application_images/to_do_tab.png)
-![Optional Text](../master/application_images/summary_tab_screen.png)
-![Optional Text](../master/application_images/profile_tab.png)
+![Home Tab Screen](../master/application_images/home_tab.png)
+![Home Tab Drawer Menu Screen ](../master/application_images/tab_tab_drawer.png)
+![To Do Tab Screen](../master/application_images/to_do_tab.png)
+![Summary Tab Screen](../master/application_images/summary_tab_screen.png)
+![Profile Tab Screen](../master/application_images/profile_tab.png)
 
-![Optional Text](../master/application_images/summary_Detail_screen.png)
-![Optional Text](../master/application_images/to_do_detail_screen.png)
+![Summary Detail Screen](../master/application_images/summary_Detail_screen.png)
+![To Do Detail Screen ](../master/application_images/to_do_detail_screen.png)
+![To Do Detail Screen With Filter Options](../master/application_images/to_do_detail_with_pop_up_menu.png)
+
 
