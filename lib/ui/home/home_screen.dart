@@ -68,7 +68,7 @@ class HomeScreen extends StatelessWidget {
                     children: [
                       PendingTaskWidget(
                         assetPath: 'assets/edit.png',
-                        title: 'Product Design Task online class app ',
+                        title: 'Product Design  \nTask online class app ',
                         days: 4,
                         startTime: '10:00 PM',
                         endTime: '12:00 PM',
@@ -79,7 +79,7 @@ class HomeScreen extends StatelessWidget {
                       ),
                       PendingTaskWidget(
                         assetPath: 'assets/package.png',
-                        title: 'Product Design Task online class app ',
+                        title: 'Product Design  \nTask online class app ',
                         days: 4,
                         startTime: '10:00 PM',
                         endTime: '12:00 PM',
@@ -90,7 +90,7 @@ class HomeScreen extends StatelessWidget {
                       ),
                       PendingTaskWidget(
                         assetPath: 'assets/edit_sketch.png',
-                        title: 'Product Design Task online class app ',
+                        title: 'Product Design \nTask online class app ',
                         days: 4,
                         startTime: '10:00 PM',
                         endTime: '12:00 PM',

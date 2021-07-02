@@ -62,14 +62,14 @@ class EventTimingWidget extends StatelessWidget {
                             children: [
                               Text(
                                 '$title',
-                                style: textStyleBack14,
+                                style: textStyleBack12,
                               ),
                               const SizedBox(
-                                height: 2,
+                                height: 5,
                               ),
                               Text(
                                 '$hour Hour',
-                                style: textStyleBack14,
+                                style: textStyleBack12,
                               )
                             ],
                           ),

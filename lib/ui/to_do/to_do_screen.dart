@@ -21,11 +21,10 @@ class ToDoScreen extends StatelessWidget {
         body: Center(
           child: InkWell(
               onTap: () {
-                debugPrint('on click of to do details ');
                 appHomeProvider.toDoNavigatorKey.currentState!
                     .pushNamed(ToDoRoute.toDoDetail);
               },
-              child: Text('To Do Screen')),
+              child: Text('Click here for \nTo Do detail Screen')),
         ),
       ),
     );

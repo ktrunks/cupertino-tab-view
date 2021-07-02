@@ -24,7 +24,7 @@ class SummaryScreen extends StatelessWidget {
                 appHomeProvider.lookNavigatorKey.currentState!
                     .pushNamed(SummaryRoute.summaryDetail);
               },
-              child: Text('Summary Screen')),
+              child: Text('Click here for \nSummary Detail Screen')),
         ),
       ),
     );
