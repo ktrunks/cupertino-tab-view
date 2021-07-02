@@ -24,6 +24,12 @@ const textStyleBack14 = TextStyle(
   color: blackColor,
 );
 
+const textStylePrimary14 = TextStyle(
+  fontSize: 14,
+  fontWeight: FontWeight.w500,
+  color: primaryColor,
+);
+
 const textStyleBack12 = TextStyle(
   fontSize: 12,
   fontWeight: FontWeight.w400,

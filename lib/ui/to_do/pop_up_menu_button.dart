@@ -14,19 +14,20 @@ class PopUpMenuButtonWidget extends StatelessWidget {
       },
       child: Image.asset('assets/filter.png'),
       itemBuilder: (BuildContext context) => <PopupMenuEntry<String>>[
-        const PopupMenuItem<String>(
+        PopupMenuItem<String>(
           value: 'Today',
-          child: Text('Today', style: textStyleBack14),
+          child: Text('Today',
+              style: toDoDetailProvider.isSelectedOption('Today')),
         ),
-        const PopupMenuItem<String>(
+        PopupMenuItem<String>(
           value: 'this week',
-          child: Text(
-            'This Week',
-          ),
+          child: Text('This Week',
+              style: toDoDetailProvider.isSelectedOption('this week')),
         ),
-        const PopupMenuItem<String>(
+        PopupMenuItem<String>(
           value: 'this month',
-          child: Text('This Month'),
+          child: Text('This Month',
+              style: toDoDetailProvider.isSelectedOption('this month')),
         ),
         PopupMenuItem<String>(
           value: 'this month',

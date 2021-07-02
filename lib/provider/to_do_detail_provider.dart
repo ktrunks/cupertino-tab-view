@@ -25,8 +25,8 @@ class ToDoDetailProvider extends ChangeNotifier {
 
   TextStyle isSelectedOption(String option) {
     if (option.toLowerCase() == _filterOption.toLowerCase())
-      return textStyleBack12;
-    else
       return textStylePrimary12;
+    else
+      return textStyleBack12;
   }
 }
